@@ -1,0 +1,11 @@
+class circle():
+    x = 3.14
+    def area_of_circle(self,radius):
+        global x
+        x = 3.14
+        self.radius = radius
+        result =  2*x*radius
+        print(result)
+c = circle()
+c.area_of_circle(3)
+print(x)

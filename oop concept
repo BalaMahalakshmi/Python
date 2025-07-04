@@ -1,0 +1,30 @@
+#inheritance 
+class Grandparent():
+    def show_gp(self):
+        print("this is our grandparents, i went to temple with my grandparents")
+class parent(Grandparent):
+    def show_p(self):
+        print("my lovable parents")
+class child(parent):
+    def show_c(self):
+        print("cute child")
+c =  child()
+c.show_c()
+c.show_gp()
+c.show_p()
+
+
+#polymorphism
+
+
+class animal():
+    def sound():
+        print("some sounds")cl
+class dog():
+    def sound():
+        print("bark")
+class cat():
+    def sound():
+        print("meow")
+for x in (animal, dog, cat):
+    x.sound()

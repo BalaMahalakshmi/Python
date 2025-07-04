@@ -19,7 +19,7 @@ c.show_p()
 
 class animal():
     def sound():
-        print("some sounds")cl
+        print("some sounds")
 class dog():
     def sound():
         print("bark")

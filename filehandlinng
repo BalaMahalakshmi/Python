@@ -1,0 +1,44 @@
+#read
+with open(r"C:\Users\balam\OneDrive\Documents\python_def.txt","r") as f:
+    print(f.read())
+
+f = open(r"C:\Users\balam\OneDrive\Documents\python_def.txt","r") 
+print(f.read())
+
+
+
+with open(r"C:\Users\balam\OneDrive\Documents\python_def.txt","r") as f:
+    print(f.read(8))
+    for line in f:
+        print(line)
+
+#write-append
+with open(r"C:\Users\balam\OneDrive\Documents\python_def.txt","a") as f:
+    f.write("its very useful. more peoples are use python\n")
+    with open(r"C:\Users\balam\OneDrive\Documents\python_def.txt","r") as f:
+        print(f.read())
+
+
+
+f = open("myfile.txt", "a")
+f.write("hi")
+f = open("myfile.txt", "r")
+print(f.read())
+
+#delete
+import os
+if os.path.exists("myfile.txt"):
+    os.remove("myfile.txt")
+else:
+    print("the file doesn't exist")
+
+
+#f = open("student.txt", "x")
+
+with open("student.txt","a") as f:
+    f.write("name:alice,mark:85,\n name:bob,mark:90,\n name:charlie,mark:78\n")
+    with open("student.txt","r") as f:
+        for line in f:
+            name,mark = line.strip().split(",")
+            print(f"{name} got {mark} marks")
+

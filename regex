@@ -1,0 +1,34 @@
+"""import re
+
+a = input("Enter one or more email: ")
+x = re.findall(r'[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}', a)
+
+if x:
+    print("Matches found:", x)
+else:
+    print("No match found")
+
+
+
+import re
+
+a = input("Enter a text: ")
+x = re.findall(r"\d+", a)
+
+if x:
+    print("matches found")
+    print("Numbers found:", x)
+else:
+    print("not matches found")"""
+
+
+import re
+
+a = input("enter text:")
+x = re.findall(r"\d+", a)
+
+if x:
+    print("matches found")
+    print("number in text:", x)
+else:
+    print("not matches found")
